@@ -43,7 +43,8 @@ const useCounter = defineStore("counter",{
         increment(num){
             //通过this来访问本地的 store
             this.count += num
-        }
+        },
+        
     }
 })
 
