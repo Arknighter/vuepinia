@@ -5,6 +5,7 @@ const useUsers = defineStore("users",{
         name: "yjh",
         age: 23,
         level: 2,
+        msg: "hhhhhhhh"
     }) 
 })
 

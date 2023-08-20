@@ -1,23 +1,16 @@
 <template>
     <hr>
-    <h2>Pinia_store</h2>
+    <h2>home</h2>
     <p> {{ countStore.count }}</p>
-    <hr>
-    <h2>getters</h2>
     <p> {{ countStore.doubleCount }}</p>
     <p> {{ countStore.doubleCountAddOne }}</p>
     <p>friend信息 {{ countStore.getFriendById(2) }}</p>
     <p>调用其他store  {{ countStore.showMsg }}</p>
-    <hr>
-    <h2>action</h2>
-    <button @click="countBtn(5)"> count ++</button>
 </template>
 <script setup>
     import useCount from '@/stores/counter'
     const countStore = useCount()
-    const countBtn = (num) => {
-        countStore.increment(num)
-    }
+
 </script>
 <style scoped>
 
